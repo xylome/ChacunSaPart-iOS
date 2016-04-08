@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IwG-En-3f3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="XMj-tj-KQM">
+            <objects>
+                <viewController id="2Ag-bm-OJu" customClass="MainViewController" customModule="loginTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y44-yc-FSZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZE1-4T-MOw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kNp-aF-f5Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My groups should come here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUi-o2-mAN">
+                                <rect key="frame" x="189" y="290" width="223" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wUi-o2-mAN" firstAttribute="centerX" secondItem="kNp-aF-f5Z" secondAttribute="centerX" id="8gi-pw-4Bw"/>
+                            <constraint firstItem="wUi-o2-mAN" firstAttribute="top" secondItem="Y44-yc-FSZ" secondAttribute="bottom" constant="226" id="C6W-6h-TZg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hhB-oz-cCk"/>
+                    <connections>
+                        <outlet property="mainTitleLabel" destination="wUi-o2-mAN" id="1iv-8v-96h"/>
+                        <outlet property="topTitleConstraint" destination="C6W-6h-TZg" id="U3P-Je-CVi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cb8-YC-yDV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1220" y="300"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3z3-dg-0ZO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IwG-En-3f3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Gi-lm-olh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2Ag-bm-OJu" kind="relationship" relationship="rootViewController" id="1nz-e1-FiH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIp-pA-tex" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408" y="300"/>
+        </scene>
+    </scenes>
+</document>

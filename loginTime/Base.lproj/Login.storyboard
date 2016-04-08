@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="V5x-jg-Itf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="loginTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chacun sa part login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3y-TN-Gdy">
+                                <rect key="frame" x="221" y="80" width="158" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAo-ik-TOZ">
+                                <rect key="frame" x="281" y="303" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="HelloWorldAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="krs-fa-nB9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="6451" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DID-Ze-PZG">
+                                <rect key="frame" x="0.0" y="232" width="600" height="42"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.01753656915" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="7Bm-qA-ueG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="xavier@chacunsapart.com" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UVp-Gc-3bb">
+                                <rect key="frame" x="0.0" y="176" width="600" height="42"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.017536569148936171" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Pzo-J6-G6H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UVp-Gc-3bb" firstAttribute="top" secondItem="N3y-TN-Gdy" secondAttribute="bottom" constant="75" id="0QK-es-ksS"/>
+                            <constraint firstItem="DID-Ze-PZG" firstAttribute="width" secondItem="UVp-Gc-3bb" secondAttribute="width" id="0sW-jU-yUx"/>
+                            <constraint firstItem="CAo-ik-TOZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="31R-Ji-j1j"/>
+                            <constraint firstItem="UVp-Gc-3bb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="6tr-oE-ZB6"/>
+                            <constraint firstItem="DID-Ze-PZG" firstAttribute="leading" secondItem="UVp-Gc-3bb" secondAttribute="leading" id="drg-4x-2i5"/>
+                            <constraint firstItem="UVp-Gc-3bb" firstAttribute="centerX" secondItem="N3y-TN-Gdy" secondAttribute="centerX" id="e1A-1e-t18"/>
+                            <constraint firstItem="N3y-TN-Gdy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="e4k-At-ggp"/>
+                            <constraint firstItem="N3y-TN-Gdy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pec-p7-u6a"/>
+                            <constraint firstItem="CAo-ik-TOZ" firstAttribute="top" secondItem="DID-Ze-PZG" secondAttribute="bottom" constant="29" id="uSs-DN-HEn"/>
+                            <constraint firstItem="DID-Ze-PZG" firstAttribute="top" secondItem="UVp-Gc-3bb" secondAttribute="bottom" constant="14" id="xCT-QR-5AC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="721-lW-uS6"/>
+                    <connections>
+                        <outlet property="email" destination="UVp-Gc-3bb" id="f8h-IT-inc"/>
+                        <outlet property="password" destination="DID-Ze-PZG" id="EQv-4M-yLM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1067" y="-369"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vnM-jw-hbm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V5x-jg-Itf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oC9-oY-ztu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="x8m-i2-oSU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mit-Nu-8sX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="171" y="-369"/>
+        </scene>
+    </scenes>
+</document>

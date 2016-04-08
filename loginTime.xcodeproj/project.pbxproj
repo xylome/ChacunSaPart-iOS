@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F72DB98B1CB7D69700304B3B /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72DB98A1CB7D69700304B3B /* LoginState.swift */; };
+		F72DB98D1CB7D70300304B3B /* LoginObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72DB98C1CB7D70300304B3B /* LoginObserver.swift */; };
+		F730061C1CB55A1300263258 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F730061B1CB55A1300263258 /* LoginResponse.swift */; };
+		F7883C721CB3FF16006A007F /* BackendDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7883C711CB3FF16006A007F /* BackendDelegate.swift */; };
+		F79A77AB1CB690CB00363569 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79A77AA1CB690CB00363569 /* Main.storyboard */; };
+		F79A77B01CB6A39200363569 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A77AF1CB6A39200363569 /* MainViewController.swift */; };
+		F79A77B31CB6AA1400363569 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A77B21CB6AA1400363569 /* MainViewModel.swift */; };
+		F7BAFBE41CB5313F00F924E6 /* MYJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BAFBE31CB5313F00F924E6 /* MYJSONParser.swift */; };
+		F7BAFBE61CB5508B00F924E6 /* MyGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BAFBE51CB5508B00F924E6 /* MyGroupsViewController.swift */; };
 		F7EE4DC11CB2ACDC0028A784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EE4DC01CB2ACDC0028A784 /* AppDelegate.swift */; };
-		F7EE4DC31CB2ACDC0028A784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EE4DC21CB2ACDC0028A784 /* ViewController.swift */; };
-		F7EE4DC61CB2ACDC0028A784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7EE4DC41CB2ACDC0028A784 /* Main.storyboard */; };
+		F7EE4DC31CB2ACDC0028A784 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EE4DC21CB2ACDC0028A784 /* LoginViewController.swift */; };
+		F7EE4DC61CB2ACDC0028A784 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7EE4DC41CB2ACDC0028A784 /* Login.storyboard */; };
 		F7EE4DC81CB2ACDC0028A784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7EE4DC71CB2ACDC0028A784 /* Assets.xcassets */; };
 		F7EE4DCB1CB2ACDC0028A784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7EE4DC91CB2ACDC0028A784 /* LaunchScreen.storyboard */; };
 		F7EE4DD61CB2ACDC0028A784 /* loginTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EE4DD51CB2ACDC0028A784 /* loginTimeTests.swift */; };
 		F7EE4DE11CB2ACDC0028A784 /* loginTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EE4DE01CB2ACDC0028A784 /* loginTimeUITests.swift */; };
+		F7EE4DEF1CB3B7630028A784 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EE4DEE1CB3B7630028A784 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F72DB98A1CB7D69700304B3B /* LoginState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
+		F72DB98C1CB7D70300304B3B /* LoginObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginObserver.swift; sourceTree = "<group>"; };
+		F730061B1CB55A1300263258 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		F7883C711CB3FF16006A007F /* BackendDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendDelegate.swift; sourceTree = "<group>"; };
+		F79A77AA1CB690CB00363569 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F79A77AF1CB6A39200363569 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F79A77B21CB6AA1400363569 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		F7BAFBE31CB5313F00F924E6 /* MYJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYJSONParser.swift; sourceTree = "<group>"; };
+		F7BAFBE51CB5508B00F924E6 /* MyGroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGroupsViewController.swift; sourceTree = "<group>"; };
 		F7EE4DBD1CB2ACDC0028A784 /* loginTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7EE4DC01CB2ACDC0028A784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7EE4DC21CB2ACDC0028A784 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F7EE4DC51CB2ACDC0028A784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7EE4DC21CB2ACDC0028A784 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F7EE4DC51CB2ACDC0028A784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		F7EE4DC71CB2ACDC0028A784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7EE4DCA1CB2ACDC0028A784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7EE4DCC1CB2ACDC0028A784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +66,7 @@
 		F7EE4DDC1CB2ACDC0028A784 /* loginTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7EE4DE01CB2ACDC0028A784 /* loginTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginTimeUITests.swift; sourceTree = "<group>"; };
 		F7EE4DE21CB2ACDC0028A784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7EE4DEE1CB3B7630028A784 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +94,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F79A77A91CB6903A00363569 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F7EE4DC91CB2ACDC0028A784 /* LaunchScreen.storyboard */,
+				F7EE4DC41CB2ACDC0028A784 /* Login.storyboard */,
+				F79A77AA1CB690CB00363569 /* Main.storyboard */,
+			);
+			name = storyboard;
+			sourceTree = "<group>";
+		};
+		F79A77AC1CB6913F00363569 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F7883C711CB3FF16006A007F /* BackendDelegate.swift */,
+			);
+			name = delegate;
+			sourceTree = "<group>";
+		};
+		F79A77AD1CB6917000363569 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F730061B1CB55A1300263258 /* LoginResponse.swift */,
+				F7BAFBE31CB5313F00F924E6 /* MYJSONParser.swift */,
+				F7EE4DEE1CB3B7630028A784 /* Login.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		F79A77AE1CB691A600363569 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7EE4DC21CB2ACDC0028A784 /* LoginViewController.swift */,
+				F7BAFBE51CB5508B00F924E6 /* MyGroupsViewController.swift */,
+				F79A77AF1CB6A39200363569 /* MainViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F79A77B11CB6A9E100363569 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F79A77B21CB6AA1400363569 /* MainViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
 		F7EE4DB41CB2ACDC0028A784 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +163,16 @@
 		F7EE4DBF1CB2ACDC0028A784 /* loginTime */ = {
 			isa = PBXGroup;
 			children = (
-				F7EE4DC01CB2ACDC0028A784 /* AppDelegate.swift */,
-				F7EE4DC21CB2ACDC0028A784 /* ViewController.swift */,
-				F7EE4DC41CB2ACDC0028A784 /* Main.storyboard */,
+				F79A77B11CB6A9E100363569 /* ViewModels */,
+				F79A77AE1CB691A600363569 /* ViewControllers */,
+				F79A77AD1CB6917000363569 /* model */,
+				F79A77AC1CB6913F00363569 /* delegate */,
+				F79A77A91CB6903A00363569 /* storyboard */,
 				F7EE4DC71CB2ACDC0028A784 /* Assets.xcassets */,
-				F7EE4DC91CB2ACDC0028A784 /* LaunchScreen.storyboard */,
+				F7EE4DC01CB2ACDC0028A784 /* AppDelegate.swift */,
 				F7EE4DCC1CB2ACDC0028A784 /* Info.plist */,
+				F72DB98A1CB7D69700304B3B /* LoginState.swift */,
+				F72DB98C1CB7D70300304B3B /* LoginObserver.swift */,
 			);
 			path = loginTime;
 			sourceTree = "<group>";
@@ -234,7 +304,8 @@
 			files = (
 				F7EE4DCB1CB2ACDC0028A784 /* LaunchScreen.storyboard in Resources */,
 				F7EE4DC81CB2ACDC0028A784 /* Assets.xcassets in Resources */,
-				F7EE4DC61CB2ACDC0028A784 /* Main.storyboard in Resources */,
+				F7EE4DC61CB2ACDC0028A784 /* Login.storyboard in Resources */,
+				F79A77AB1CB690CB00363569 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +330,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7EE4DC31CB2ACDC0028A784 /* ViewController.swift in Sources */,
+				F72DB98D1CB7D70300304B3B /* LoginObserver.swift in Sources */,
+				F7BAFBE61CB5508B00F924E6 /* MyGroupsViewController.swift in Sources */,
+				F7EE4DC31CB2ACDC0028A784 /* LoginViewController.swift in Sources */,
+				F7BAFBE41CB5313F00F924E6 /* MYJSONParser.swift in Sources */,
+				F7EE4DEF1CB3B7630028A784 /* Login.swift in Sources */,
 				F7EE4DC11CB2ACDC0028A784 /* AppDelegate.swift in Sources */,
+				F72DB98B1CB7D69700304B3B /* LoginState.swift in Sources */,
+				F7883C721CB3FF16006A007F /* BackendDelegate.swift in Sources */,
+				F730061C1CB55A1300263258 /* LoginResponse.swift in Sources */,
+				F79A77B01CB6A39200363569 /* MainViewController.swift in Sources */,
+				F79A77B31CB6AA1400363569 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,12 +376,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F7EE4DC41CB2ACDC0028A784 /* Main.storyboard */ = {
+		F7EE4DC41CB2ACDC0028A784 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F7EE4DC51CB2ACDC0028A784 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		F7EE4DC91CB2ACDC0028A784 /* LaunchScreen.storyboard */ = {
@@ -487,6 +567,7 @@
 				F7EE4DE71CB2ACDC0028A784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7EE4DE81CB2ACDC0028A784 /* Build configuration list for PBXNativeTarget "loginTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +576,7 @@
 				F7EE4DEA1CB2ACDC0028A784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7EE4DEB1CB2ACDC0028A784 /* Build configuration list for PBXNativeTarget "loginTimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +585,7 @@
 				F7EE4DED1CB2ACDC0028A784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -52,7 +52,7 @@ class LoginViewController: UIViewController, BackendDelegate {
     func onResult(response: LoginResponse) {
         saveUserData(response)
         loginState.loginResponse = response
-        loginState.updateLogged("Logged in \\o/")
+        loginState.updateLogged("Logged")
         dismissViewControllerAnimated(false, completion: nil)
     }
     

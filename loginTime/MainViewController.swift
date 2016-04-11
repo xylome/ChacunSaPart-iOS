@@ -39,22 +39,24 @@ class MainViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        if (loginState.logged == "Logged") {
+            refreshLoginInfo()
+        }
+        
         print("view did appear")
     }
     
     func refreshLoginInfo() {
         if let nick = loginState.loginResponse?.nick {
+            print("Hello Yunus!")
             mainTitleLabel.text = "Hello " + nick + " ! "
-            view.setNeedsUpdateConstraints()
-            UIView.animateWithDuration(1000) {
-                self.animate()
+            topTitleConstraint.constant = 10
+            mainTitleLabel.alpha = 1
+            UIView.animateWithDuration(1, delay: 0, options: [.CurveEaseOut], animations: {
+            
                 self.view.layoutIfNeeded()
+                }, completion: nil)
             }
-        }
-    }
-    
-    func animate() {
-        topTitleConstraint.constant = 10.0
     }
     
     func startLogin() {
@@ -67,7 +69,6 @@ class MainViewController: UIViewController {
             if let newValue = change?[NSKeyValueChangeNewKey] {
                 print("New value for logint state: \(newValue)")
                 print("New state singleton value is: \(loginState.logged)")
-                refreshLoginInfo()
             }
         } else {
             super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
